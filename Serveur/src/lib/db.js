@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 //var mongoUrl ='mongodb://localhost:27017/participants';
 //mongodb://<user>:<pass>@mongo.onmodulus.net:27017/uw15dfpu
 //var mongoUrl ='mongodb://sana:Allah7akbar@ds115071.mlab.com:15071/movies';
-var mongoUrl='mongodb://sana:sana@ds137141.mlab.com:37141/participants';
+var mongoUrl=process.env.MONGOLAB_URI;
 module.exports = function(app) {
   mongoose.Promise = global.Promise;
   mongoose.connect(mongoUrl, {

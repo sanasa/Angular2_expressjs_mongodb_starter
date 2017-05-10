@@ -1,3 +1,9 @@
 language: node_js
 node_js:
-  - "7"
+- '7'
+deploy:
+  api_key:
+    secure: YyXrLUOKFck5Exi72rhEUuT2fmtNjHNvkgm4KLvm1pq5zb4TWNEzEtlMuGxaRTH9D8YT674/uONNwevVyi9WHHGruZ6skHDT2KYCQr22yy/Kq7zDrUJk+3EVioHYILIhm+i/AqK+VIHwhEOIdNtzPE+nzkBv2E39aRogxK1hiTveW7WmVFfjUGygsK6CqIApsGHly17zykz89qyazF5ImwnHRynjWzV9c7a9syKFpyuApXylkkpYk/oIBy8fq3rfylsGeXJGBsin3av3lc/TwQKu2igdGDvtFj/P+PwvObrJJMMeCe1eWOAlQF6fVyp5hX+EUxC/Eca5aA4TNbjwGhB8W5jnhIwoej28meh43snU6aW+hTwVNQHnab2TlPlfXIRLQKFQGCENUkuqAK435GLINAXvOofWyvEVqa6M4HAgCzHFBeEHK92XkwtSTxPmakhzNAmzaPs9MDCk22V0DfUZXsiv3ABvWUS0rctInhfoL9ua6zI7bgXETRuDuWIEZmLBpDvrfuRaZSK2wfjSPi6W4eg+W7Ej7g9V3LzkdJPIAv8CrjkrMcOWpUCuNnczNTtJ2duH2KNGKX++X7OUf6wXKihYhBRvGnBoPHbXTReZoUZ4PH9ltx22v0Mbir7RZQHDZy+zQL2yWDgMbfuSufWgHQLosNsaXMfHW2I5EK4=
+  provider: heroku
+  app: aqueous-ravine-66397
+  strategy: git
