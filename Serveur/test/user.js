@@ -12,12 +12,12 @@ chai.use(chaiHttp);
  
 describe('Users', function () {
 
-    // // cleanup the collection once to have consistent test results
-    // before(function (done) {
-    //     User.remove({}, function (err, result) {
-    //         done(err);
-    //     });
-    // });
+    // cleanup the collection once to have consistent test results
+    before(function (done) {
+        User.remove({}, function (err, result) {
+            done(err);
+        });
+    });
 
     describe('/GET User', () => {
         it('it should GET all the Users', (done) => {
