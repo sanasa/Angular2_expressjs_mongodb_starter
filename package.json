@@ -6,7 +6,7 @@
   "scripts": {
     "gulp":"gulp hint lint",
     "ng": "ng",
-    "start": "mongod & node app.js & ng serve",
+    "start": "node app.js & ng serve",
     "build": "ng build",
     "test": "gulp test",
     "lint": "ng lint",
