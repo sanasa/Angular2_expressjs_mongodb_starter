@@ -1,3 +1,3 @@
-var app = require('./Serveur/src/lib/app')
+var app = require('./Serveur/src/lib/app');
 var port=process.env.PORT;
-app.listen(port)
+app.listen(port);
