@@ -4,6 +4,7 @@
   "license": "MIT",
   "main":"./Serveur/app.js",
   "scripts": {
+    "postinstall": "ng build --aot -prod",
     "gulp":"gulp hint lint",
     "ng": "ng",
     "start": "node app.js ; ng serve",
