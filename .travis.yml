@@ -1,6 +1,8 @@
 language: node_js
 node_js:
 - '7'
+before_script:
+- ng serve
 deploy:
   provider: heroku
   api_key:
