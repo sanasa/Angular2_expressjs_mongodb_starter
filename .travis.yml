@@ -1,3 +1,10 @@
 language: node_js
 node_js:
 - '7'
+deploy:
+  provider: heroku
+  api_key:
+    secure: f7V9+mHmQslaDeQdJaMBnNrbcbr6wyzqO/xshfzG3i/oi99dYJBEtQP1eEXsTsXDG3q4/h2FXTx6qX0bW3G3FOfHnxthBROnHPcLPOkXroToOYr3tku9Os5AsInUBu9onHZowT4NcOO/py4K8Zj/1Wv1uMMFKK8rLPOmE2gkhyiEj5AhIg/y/NwjTIGoj3XyLE8EnJaX622pWXifpjwX04Ht/OTi4quo6OcyNtfjHprl7Kl9mDOzMRdbh3rLcZC83/ZFyvBy9VqMfw8MYeGxM2AjuHcgEIHfRHNEg4olMykyLAwDomfzYcYFw96DhFNbVvyG0DCQkIFuyQmTUJS8vihejc4Sf5TM1Hitfnv04FC07lfMySVxV3u7jfMu4sO5m1y0bkuNNIHX2vEHZmsp+lQ4dMRQYA+W92kl1zGtPPNYWJEPWGn4osfj8YQfbdVuhlJRNaVHtfqgUhlfdsSTYPyqOgTiPqKpcTLHoZOHOL6y/0nhEt5myU0cFCGMucQjYCsZ15Sj3f6IXCuPnZuSm6ZrtyU7dlfkEsy7JbV9EquaTO8H32ZOz28tjhmoI+VsRL3hAszrrnVyb+Nu2pUu4rdxRaJlSSPlBb2oC+a0SIrPFrP2+qakH6oJ/Ff/RXRx88ga8MxWD+H5zEs5er7OlUVPQ6lsLNkDBrcxM23u09w=
+  app: aqueous-ravine-66397
+  on:
+    repo: sanasa/Angular2_expressjs_mongodb_starter
