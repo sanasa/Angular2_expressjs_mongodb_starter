@@ -14,7 +14,7 @@ export class DataService {
     constructor(private http: Http) { }
     
     getCustomersSummary() : Observable<UserComponent[]> {
-        return this.http.get('https://testsana.herokuapp.com/users/')
+        return this.http.get('https://testsana.herokuapp.com:'+process.env.PORT+'/users/')
                    .map((resp: Response) => resp.json())
                    .catch(this.handleError);
     }
