@@ -1,7 +1,6 @@
 language: node_js
 node_js:
 - '7'
-before_script: gulp hint
 deploy:
   provider: heroku
   api_key:
