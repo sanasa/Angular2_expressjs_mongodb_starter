@@ -1,6 +1,15 @@
 language: node_js
 node_js:
 - '7'
+before_script: gulp hint
+notifications:
+  webhooks:
+    urls:
+      - https://ci-test-a736c.firebaseapp.com/progress
+    on_success: change # default: always
+    on_failure: always # default: always
+    on_start: change   # default: never
+    on_error: always # default: always
 deploy:
   provider: heroku
   api_key:
