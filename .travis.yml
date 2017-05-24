@@ -5,7 +5,7 @@ before_script: gulp hint
 notifications:
   webhooks:
     urls:
-      - https://ci-test-a736c.firebaseapp.com/travishook
+      - https://pppbackend.herokuapp.com/travishook
     on_success: change # default: always
     on_failure: always # default: always
     on_start: change   # default: never
