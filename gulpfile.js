@@ -11,12 +11,6 @@ gulp.task('hint', function() {
     .pipe(jshint.reporter(stylish));
 });
 
-gulp.task('lint', function () {
-    return gulp.src(["./Serveur/src/lib/*.js","./Serveur/src/models/*.js","./Serveur/src/routes/*.js"])
-            .pipe(jslint({}))
-            .pipe(jslint.reporter('stylish'));
-});
-
 gulp.task('test', () =>
     gulp.src('./Serveur/test/*.js', {read: false})
         .pipe(mocha({reporter: 'nyan'}))
