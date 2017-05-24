@@ -3,8 +3,10 @@ node_js:
 - '7'
 before_script: gulp hint
 notifications:
-  webhooks: https://pppbackend.herokuapp.com/travishook
-   on_success: change # default: always
+  webhooks:
+    urls:
+      - https://pppbackend.herokuapp.com/travishook
+    on_success: change # default: always
     on_failure: always # default: always
     on_start: change   # default: never
     on_error: always # default: always
