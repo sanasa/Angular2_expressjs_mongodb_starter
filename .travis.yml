@@ -8,7 +8,8 @@ notifications:
       - https://pppbackend.herokuapp.com/travishook
     on_success: change # default: always
     on_failure: always # default: always
-    on_start: change   # default: never
+    on_start: always   # default: never
+    on_error: always # default: always
 deploy:
   provider: heroku
   api_key:
