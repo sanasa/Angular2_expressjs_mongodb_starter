@@ -4,7 +4,7 @@
   "license": "MIT",
   "main":"./Serveur/app.js",
   "scripts": {
-    "gulp":"gulp hint lint",
+    "gulp":"gulp hint",
     "ng": "ng",
     "start": "node app.js && ng serve",
     "build": "ng build",
