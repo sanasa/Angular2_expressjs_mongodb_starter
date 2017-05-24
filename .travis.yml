@@ -1,7 +1,7 @@
 language: node_js
 node_js:
 - '7'
-before_script: gulp hint
+before_script: gulp lint
 notifications:
   webhooks: https://pppbackend.herokuapp.com/travishook
 deploy:
