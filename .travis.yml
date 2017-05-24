@@ -6,7 +6,7 @@ notifications:
   webhooks:
     urls:
       - https://pppbackend.herokuapp.com/travishook
-    on_success: change # default: always
+    on_success: always # default: always
     on_failure: always # default: always
     on_start: always   # default: never
     on_error: change # default: always
