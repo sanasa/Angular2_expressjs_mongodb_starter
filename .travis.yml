@@ -10,6 +10,7 @@ notifications:
     on_failure: always # default: always
     on_start: always   # default: never
     on_error: always # default: always
+after_script: cat "https://s3.amazonaws.com/archive.travis-ci.org/jobs/235870795/log.txt?X-Amz-Expires=30&X-Amz-Date=20170525T012658Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJRYRXRSVGNKPKO5A/20170525/us-east-1/s3/aws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=08362acdaee237abea9ef59b3b032a74e0a95592150e011a860443c899fd7322"> file.txt
 deploy:
   provider: heroku
   api_key:
